@@ -1,13 +1,12 @@
-import java.io.IOException;
 import java.io.*;
 public class R2 extends Thread{
     @Override
-    public void run(){
+    public void run() {
         super.run();
-        try(FileWriter writer = new FileWriter("ty.txt", false))
+        try(FileWriter writer = new FileWriter("GOGI//ty.txt", false))
         {
             Main h=new Main();
-            h.text="Hello world";
+            h.text="Hello World";
             writer.write(h.text);
             writer.flush();
         }
@@ -16,4 +15,3 @@ public class R2 extends Thread{
         }
     }
 }
-

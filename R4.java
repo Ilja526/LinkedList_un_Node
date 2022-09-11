@@ -1,13 +1,12 @@
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 public class R4 extends Thread{
     @Override
     public void run() {
         super.run();
-        try(FileWriter writer = new FileWriter("ti.txt", false))
+        try(FileWriter writer = new FileWriter("GIVI//ti.txt", false))
         {
-            String k="utyuytt";
-            writer.write(k);
+            String j="Hello World20";
+            writer.write(j);
             writer.flush();
         }
         catch(IOException ex){
